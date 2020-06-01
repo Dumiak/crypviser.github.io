@@ -10,10 +10,9 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 header {
-  heignt: 80px;
+  height: 80px;
   position: fixed;
   width: 100%;
-  background: #fff;
 }
 .wrapper {
 	width: 1180px;
@@ -39,7 +38,7 @@ header {
 	padding-left: 50px;
 }
 .main_menu li a {
-	color: #212121;
+	color: #ffffff;
 	text-decoration: none;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -50,3 +49,4 @@ header {
 }
 .jcsb {
 	justify-content: space-between;
+}
