@@ -8,6 +8,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 header {
   height: 80px;
@@ -18,9 +19,12 @@ header {
 	width: 1180px;
 	margin: 0 auto;
 }
-.home{
+.home {
 	height: 100vh;
-	background-image: url(../img/BG.jpg);
+	background-image: url(../img/bg_home.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 .flex {
 	display: -webkit-flex;
@@ -36,11 +40,45 @@ header {
 }
 .main_menu li {
 	padding-left: 50px;
+	opacity: 0.4;
+}
+.main_menu li.active {
+	opacity: 1;
+}
+.main_menu li.active::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	display: block;
+	background: #2b8e50;
+}
+.main_menu li.lgactive::after {
+  content: '';
+	width: 100%;
+	height: 2px;
+	display: block;
+	background: #2b8e50;
+}
+.main_menu li.bactive:hover::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	display: block;
+	background: #2b8e50;
+}
+.main_menu li.lgactive:hover::after {
+	content: '';
+	width:  10px 10px 10px 10px;
+	height: 2px;
+	display: block;
+	background: #2b8e50;
+	border-bottom-style: solid;
+	border-color: #cacd58;
 }
 .main_menu li a {
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 15px;
 	text-transform: uppercase;
 }
 .a_center {
@@ -49,4 +87,47 @@ header {
 }
 .jcsb {
 	justify-content: space-between;
+}
+h1 {
+	font-size: 56px;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+.home_content {
+	color: #fff;
+	padding-bottom: 140px;
+	line-height: 1.4;
+}
+p {
+	font-size: 26px;
+}
+.home_img {
+
+}
+.btn {
+	color: #33302d;
+	text-transform: uppercase;
+	font-size: 18px;
+	background: #2b8e50;
+	padding: 22px 0px;
+	width: 240px;
+	display: block;
+	text-decoration: none;
+	font-weight: 500;
+	font-family: Oswald ;
+	text-align: center;
+	border-radius: 4px;
+}
+li.btn_lg {
+	color: #fff;
+	padding: 5px 5px 5px 5px;
+	border: 2px solid #fff;
+	font-size: 6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	position: relative;
+	text-align: center
+	opacity: 1;
 }
